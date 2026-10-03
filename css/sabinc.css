@@ -112,6 +112,33 @@ border-radius: 5px;
 box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 flex: 1 1 250px;}
 
+.table-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    max-width: 1100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.logout-btn{
+display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: var(--accent-color);
+}
+
 @media (max-width: 400px) {
     article {
         flex: 1 1 100%;

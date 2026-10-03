@@ -23,15 +23,15 @@
 
 <main>
 <div class="form-card">
-<form action="#" method="post">
+<form action="process-booking.php" method="post">
 <div class="form-field"><label for="fullname">Full Name:</label>
-<input type="text" id="fullname" name="fullname"></div><br>
+<input type="text" id="fullname" name="fullname" required></div><br>
 
 <div class="form-field"><label for="email">Email:</label>
-<input type="email" id="email" name="email"></div><br>
+<input type="email" id="email" name="email" required></div><br>
 
 <div class="form-field"><label for="tel">Telephone:</label>
-<input type="tel" id="tel" name="tel"></div><br>
+<input type="tel" id="tel" name="tel" required></div><br>
 
 <div class="form-field"><label for="date">Preferred Consultation Date</label>
 <input type="date" id="date" name="date"></div><br>
@@ -44,16 +44,16 @@
 <label for="inperson" class="inline-label">In-person</label></div><br>
 
 <div class="form-field"><p>Services of interest</p>
-<input type="checkbox" id="scheduleauditing" name="servicesofinterest" value="Pre-Award Schedule Auditing">
+<input type="checkbox" id="scheduleauditing" name="servicesofinterest[]" value="Pre-Award Schedule Auditing">
 <label for="scheduleauditing" class="inline-label">Pre-Award Schedule Auditing</label>
 
-<input type="checkbox" id="projectcontrolsandevm" name="servicesofinterest" value="Project Controls and EVM">
+<input type="checkbox" id="projectcontrolsandevm" name="servicesofinterest[]" value="Project Controls and EVM">
 <label for="projectcontrolsandevm" class="inline-label">Project Controls &amp; Earned Value Management</label>
 
-<input type="checkbox" id="independentsiteandqualityoversight" name="servicesofinterest" value="Independent Site and Quality Oversight">
+<input type="checkbox" id="independentsiteandqualityoversight" name="servicesofinterest[]" value="Independent Site and Quality Oversight">
 <label for="independentsiteandqualityoversight" class="inline-label">Independent Site &amp; Quality Oversight</label>
 
-<input type="checkbox" id="claimsanddelayanalysis" name="servicesofinterest" value="Claims and Delay Analysis">
+<input type="checkbox" id="claimsanddelayanalysis" name="servicesofinterest[]" value="Claims and Delay Analysis">
 <label for="claimsanddelayanalysis" class="inline-label">Claims &amp; Delay Analysis</label></div><br>
 
 <div class="form-field"><label for="status">Project Status</label>
